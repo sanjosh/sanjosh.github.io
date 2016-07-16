@@ -138,17 +138,17 @@ Steps
 
 In Scala, when you prefix a string with a “q” (i.e. val mytree = q”this is a tree”), the Scala compiler internally stores the variable “mytree” as a Syntax Tree rather than a string.
 
-http://docs.scala-lang.org/overviews/quasiquotes/intro.html
+[QuasiQuotes](http://docs.scala-lang.org/overviews/quasiquotes/intro.html)
 
 Now you can write Scala code to compare trees or transform them.  Catalyst uses this feature to store query execution trees and generate Java bytecode from them.
 
-https://databricks.com/blog/2015/04/13/deep-dive-into-spark-sqls-catalyst-optimizer.html
+[Databricks](https://databricks.com/blog/2015/04/13/deep-dive-into-spark-sqls-catalyst-optimizer.html)
 
 ## Apache Tajo
 
 Tables are stored in columnar format and bytecode for vectorized primitives is generated at runtime.  They use the unsafe Java library (sun.misc.unsafe) to do direct in-memory optimizations on vectors.  Memory allocated via “unsafe” is not under GC control and not constrained by JVM heap size.
 
-http://www.slideshare.net/Hadoop_Summit/t-435p210-achoiv2
+[Apache Tajo](http://www.slideshare.net/Hadoop_Summit/t-435p210-achoiv2)
 
 ## MemSQL
 
@@ -167,9 +167,9 @@ They obtained 108X performance by running on multi-core and letting each core wo
 
 They obtained 180X performance by using a columnar data store with LZ4 and Delta compression.
 
-http://vitessedata.com/
+[VitesseDB](http://vitessedata.com/)
 
-Slides here:  http://goo.gl/Mtg2W6
+[Slides](http://goo.gl/Mtg2W6)
 
 ## Facebook Presto
 
@@ -182,11 +182,11 @@ This class is invoked from the *LocalExecutionPlanner*.
 
 It uses LLVM to compile stored procedures into LLVM IR (intermediate representation) language.  
 
-http://llvm.org/devmtg/2013-11/slides/Wanderman-Milne-Cloudera.pdf
+[Cloudera](http://llvm.org/devmtg/2013-11/slides/Wanderman-Milne-Cloudera.pdf)
 
 # References
 1. D. G. Murray, M. Isard, and Y. Yu. Steno: Automatic Optimization of Declarative Queries. In PLDI, 2011.
 2. K. Krikellas, S. D. Viglas, and M. Cintra. Generating code for holistic query evaluation. In ICDE, 2010.
 3. T. Neumann. Efficiently compiling efficient query plans for modern hardware. Proc. VLDB Endow., 4(9), 2011.
 4. C. Diaconu, C. Freedman, E. Ismert et al., “Hekaton: Sql server’s memory-optimized OLTP engine,” in SIGMOD ’13, 2013.
-5. Armbrust, et al .  Spark SQL: Relational Data Processing in Spark.  SIGMOD 2015 http://people.csail.mit.edu/matei/papers/2015/sigmod_spark_sql.pdf
+5. Armbrust, et al .  Spark SQL: Relational Data Processing in Spark.  [SIGMOD 2015](http://people.csail.mit.edu/matei/papers/2015/sigmod_spark_sql.pdf)
