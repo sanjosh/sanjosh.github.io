@@ -1,3 +1,8 @@
+
+---
+layout: post
+title: JIT-based SQL systems
+
 This is a short survey of systems which have been developed for JIT-based execution of SQL queries.
 
 # Overview
