@@ -32,7 +32,7 @@ Summary of Address Sanitizer paper
 - free() poisons the region and uses a queue to ensure it doesnt get allocated anytime soon
 - each memory access checks if corresponding shadow byte is zero
 
-###Thread-safe by design
+### Thread-safe by design
 - Shadow mem modified only inside malloc/free, stack frame create/destroy, module init
 - All other thread-related accesses to shadow memory are reads
 
