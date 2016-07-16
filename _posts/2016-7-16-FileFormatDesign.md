@@ -16,8 +16,8 @@ Points to consider while designing a file format
 * use PNG idea - have series of chunks, each with a type, length and data.  Unrecognized chunks can be ignored.
 
 References
-* <https://en.wikipedia.org/wiki/File_format>
-* <https://www.w3.org/TR/PNG/>
-* <http://www.magicdb.org/filedesign.html>
-* <http://www.perlmonks.org/?node_id=491321>
-* <http://stackoverflow.com/questions/323604/what-are-important-points-when-designing-a-binary-file-format>
+* <https://en.wikipedia.org/wiki/File_format>  
+* <https://www.w3.org/TR/PNG/>  
+* <http://www.magicdb.org/filedesign.html>  
+* <http://www.perlmonks.org/?node_id=491321>  
+* <http://stackoverflow.com/questions/323604/what-are-important-points-when-designing-a-binary-file-format>  
