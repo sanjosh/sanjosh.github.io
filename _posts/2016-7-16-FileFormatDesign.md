@@ -3,7 +3,7 @@ layout: post
 title: File Format design
 ---
 
-Points to consider while designing a file format
+### Points to consider while designing a file format  
 
 * prefer self-describing files (no external metadata)
 * checksum
@@ -15,7 +15,7 @@ Points to consider while designing a file format
 * use TLV (tag-length-value) ?
 * use PNG idea - have series of chunks, each with a type, length and data.  Unrecognized chunks can be ignored.
 
-References
+### References  
 * <https://en.wikipedia.org/wiki/File_format>  
 * <https://www.w3.org/TR/PNG/>  
 * <http://www.magicdb.org/filedesign.html>  
