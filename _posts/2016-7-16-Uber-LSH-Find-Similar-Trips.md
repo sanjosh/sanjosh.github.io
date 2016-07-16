@@ -25,16 +25,16 @@ google s2 cell : have to vary level of granularity based on trip length
 3. remove contiguous duplicates
 
 4. directionality  : use shingling to combine cell with previous cell   
-     (i.e) convert {1, 2, 3} to {102, 203, 304}
+     (i.e) convert {1, 2, 3} to {102, 203, 304}  
      <https://en.wikipedia.org/wiki/W-shingling>
 
-5. solve set overlap problem - find common shingles
-     using Locality sensitive hash
-   minhash = min { h(x) for all x in set S}
-     where h(x) = ax + b Mod m 
-     where m = number of hash bins
-   How to increase and control probability 
-     use multiple minhash func with different parameters
+5. solve set overlap problem - find common shingles  
+     using Locality sensitive hash  
+   minhash = min { h(x) for all x in set S}  
+     where h(x) = ax + b Mod m   
+     where m = number of hash bins  
+   How to increase and control probability   
+     use multiple minhash func with different parameters  
 
 
 6. LSH on Spark
