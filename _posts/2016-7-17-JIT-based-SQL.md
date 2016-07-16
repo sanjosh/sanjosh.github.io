@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: JIT-based SQL systems
