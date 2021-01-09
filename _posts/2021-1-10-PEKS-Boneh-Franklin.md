@@ -21,7 +21,7 @@ This problem is solved using a bilinear map, which enables two different ways of
 
 A bilinear map is a function of two variables f(x, y) satifying this condition
 
-<img src="https://render.githubusercontent.com/render/math?math=f(x^{a}, y^{y}) = f(x, y)^{ab} ">
+<img src="https://render.githubusercontent.com/render/math?math=\HUGE f(x^{a}, y^{y}) = f(x, y)^{ab} ">
 
 Lets say you have
 1. public key = y
