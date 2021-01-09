@@ -9,15 +9,19 @@ Crytographers do not use diagrams since they have internalized the notation, but
 
 Assume you have a public key encryption system.
 
-Let’s say you wanted to allow a third-party to test whether an encrypted text matches a search string, without 
-1. decrypting the encrypted text or 
-2. encrypting the search string
+Bob is sending an encrypted message to Alice using Alice's public key
 
-Let’s say encryption("*Nice*") produces "*8Ev7*"
+![alice1](/post_images/alice1.jpg)
 
-How can a third-party verify that "*8Ev7*" is actually "*Nice*" in encrypted form ?
+Alice wants to delegate some checking of messages to Eve.  She wants Eve to check if the encrypted message is her favourite keyword "Nice", but she does not want Eve to know she is looking for "*Nice*".
 
-What you need here is an auxiliary string called a **trapdoor** which the third-party can use to verify the equality.  
+![alice2](/post_images/alice2.jpg)
+
+How can Eve verify that "*8Ev7*" is actually "*Nice*" in encrypted form ?
+
+What you need here is an auxiliary string called a **trapdoor** which Eve can use to verify the equality.   Encrypting the trapdoor produces the original ciphertext, allowing Eve to verify equality.
+
+![alice3](/post_images/alice3.jpg)
 
 The trapdoor can be produced using a <a href="https://en.wikipedia.org/wiki/Bilinear_map">bilinear map</a> which enables two different ways of producing same encrypted text.
 
