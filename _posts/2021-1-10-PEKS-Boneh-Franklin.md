@@ -17,7 +17,7 @@ Let’s say encryption("*Nice*") produces "*8Ev7*"
 
 How can a third-party verify that "*8Ev7*" is actually "Nice" in encrypted form ?
 
-What you need here is an auxiliary string called a **trapdoor** which the third-party can use to verify the equality.  A trapdoor can be produced using a <a href="https://en.wikipedia.org/wiki/Bilinear_map">bilinear map</a> which enables two different ways of producing same encrypted text ("*8Ev7*")
+What you need here is an auxiliary string called a **trapdoor** which the third-party can use to verify the equality.  A trapdoor can be produced using a <a href="https://en.wikipedia.org/wiki/Bilinear_map">bilinear map</a> which enables two different ways of producing same encrypted text.
 
 A bilinear map is a function of two variables *f(x, y)* satifying this condition
 
@@ -65,4 +65,4 @@ There are two more hash functions which come into play in the complete scheme.
 1. Boneh, et al.  Public Key Encryption with keyword Search.  <a href="https://crypto.stanford.edu/~dabo/pubs/papers/encsearch.pdf"> https://crypto.stanford.edu/~dabo/pubs/papers/encsearch.pdf </a>
 2. Alfred Menezies.  An introduction to pairing-based cryptography (2005) <a href="http://www.math.uwaterloo.ca/~ajmeneze/publications/pairings"> http://www.math.uwaterloo.ca/~ajmeneze/publications/pairings  </a>
 3. John Bethencourt.  Intro to bilinear maps <a href="https://people.csail.mit.edu/alinush/6.857-spring-2015/papers/bilinear-maps.pdf"> https://people.csail.mit.edu/alinush/6.857-spring-2015/papers/bilinear-maps.pdf</a>
-4. Advantages of bilinear map.  https://crypto.stackexchange.com/questions/12357/advantages-of-bilinear-map4. Advantages of bilinear map.  https://crypto.stackexchange.com/questions/12357/advantages-of-bilinear-map4. Advantages of bilinear map.  https://crypto.stackexchange.com/questions/12357/advantages-of-bilinear-map4. Advantages of bilinear map.  https://crypto.stackexchange.com/questions/12357/advantages-of-bilinear-map
+4. Advantages of bilinear map.  <a href="https://crypto.stackexchange.com/questions/12357/advantages-of-bilinear-map4">  https://crypto.stackexchange.com/questions/12357/advantages-of-bilinear-map4"> </a>
