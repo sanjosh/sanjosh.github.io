@@ -67,7 +67,12 @@ and
 
 The trapdoor construction is more complex and cryptographically secure, in order to prevent the third-party from guessing the original text.
 
+## Full scheme
+
+![pic4](/post_images/full_scheme.jpg)
+
 Alfred Menezies
+
 Bethencourt
 original paper
 
