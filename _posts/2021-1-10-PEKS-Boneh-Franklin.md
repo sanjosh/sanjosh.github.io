@@ -19,7 +19,7 @@ How can a third-party verify that "*8Ev7*" is actually "Nice" in encrypted form 
 
 What you need here is an auxiliary string called a **trapdoor** which the third-party can use to verify the equality
 
-This problem can be solved using a bilinear map, which enables two different ways of producing same encrypted text
+This problem can be solved using a <a href="https://en.wikipedia.org/wiki/Bilinear_map">bilinear map</a> which enables two different ways of producing same encrypted text
 
 A bilinear map is a function of two variables *f(x, y)* satifying this condition
 
@@ -54,8 +54,6 @@ This is intuitively the first cryptographic construction given by Boneh, et al i
 
 I have played fast and loose here to provide intuition.  Refer to original paper for rigorous explanation.
 
-The trapdoor construction is more complex and cryptographically secure, in order to prevent the third-party from guessing the original text.
-
 ## How to produce bilinear maps ?  
 
 I am not going into that here. You have to use Weil pairings or Tate pairings over elliptic curves.  
@@ -68,7 +66,7 @@ There are two more hash functions which come into play in the complete scheme.
 
 ## Reference
 
-1. Boneh, et al.  Public Key Encryption with keyword Search.  https://crypto.stanford.edu/~dabo/pubs/papers/encsearch.pdf
-2. Alfred Menezies.  An introduction to pairing-based cryptography (2005) http://www.math.uwaterloo.ca/~ajmeneze/publications/pairings
-3. John Bethencourt.  Intro to bilinear maps https://people.csail.mit.edu/alinush/6.857-spring-2015/papers/bilinear-maps.pdf
+1. Boneh, et al.  Public Key Encryption with keyword Search.  <a href="https://crypto.stanford.edu/~dabo/pubs/papers/encsearch.pdf"> link </a>
+2. Alfred Menezies.  An introduction to pairing-based cryptography (2005) <a href="http://www.math.uwaterloo.ca/~ajmeneze/publications/pairings"> link </a>
+3. John Bethencourt.  Intro to bilinear maps <a href="https://people.csail.mit.edu/alinush/6.857-spring-2015/papers/bilinear-maps.pdf"> link </a>
 
