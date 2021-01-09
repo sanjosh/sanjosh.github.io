@@ -21,7 +21,7 @@ This problem is solved using a bilinear map, which enables two different ways of
 
 A bilinear map is a function of two variables f(x, y) satifying this condition
 
-![eqn1](images/firsteqn.gif)
+![eqn1](_posts/images/firsteqn.gif)
 
 Lets say you have
 1. public key = PUB
