@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-[LinkedIn](https://in.linkedin.com/in/sandeep-joshi-26b57a97)
+[LinkedIn](https://www.linkedin.com/in/sanjoshi/)
 
 
 
