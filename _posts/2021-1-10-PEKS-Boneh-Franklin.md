@@ -21,31 +21,31 @@ This problem is solved using a bilinear map, which enables two different ways of
 
 A bilinear map is a function of two variables f(x, y) satifying this condition
 
-<img src="https://render.githubusercontent.com/render/math?math=\HUGE[ chk f(x^{a}, y^{y}) = f(x, y)^{ab} \] ">
+![eqn1](images/firsteqn.jpg)
 
 Lets say you have
-1. public key = y
+1. public key = PUB
 2. private key = PVT
 
 Let x be the text to be encrypted
 
 The encrypted text is generated using f(x, y).
 
-<img src="https://render.githubusercontent.com/render/math?math=f(Nice, y) = 8Ev7 ">
+![eqn2](images/secondeqn.jpg)
 
 Now you have to generate an extra string called the trapdoor in the form of "x^PVT"
 
-<img src="https://render.githubusercontent.com/render/math?math=Nice^{PVT} = 8Ev7 ">
+![eqn3](images/thirdeqn.jpg)
 and
-<img src="https://render.githubusercontent.com/render/math?math=y^{1/PVT} = z ">
+![eqn4](images/fourtheqn.jpg)
 
 Now by the property of a bilinear map, the PVT multiplication and division cancels out giving
 
-<img src="https://render.githubusercontent.com/render/math?math=f(x^{PVT}, y^{PVT}) = f(x, y) = 8Ev7 ">
+![eqn5](images/fiftheqn.jpg)
 
 So you have two ways of producing the same encrypted text !!
 
-<img src="https://render.githubusercontent.com/render/math?math=f(Vgzv, z) = f(Nice, x) = 8Ev7 ">
+![eqn6](images/sixtheqn.jpg)
 
 If you give this string "Vgzv" along with the modified public key (y^PVT) to the third-party, they can verify the equality
 
