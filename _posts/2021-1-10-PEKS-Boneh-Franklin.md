@@ -23,8 +23,6 @@ A bilinear map is a function of two variables f(x, y) satifying this condition
 
 ![eqn1](/post_images/firsteqn.gif)
 
-![eqn_dup](/_posts/firsteqn.gif)
-
 Lets say you have
 1. public key = PUB
 2. private key = PVT
@@ -33,21 +31,21 @@ Let x be the text to be encrypted
 
 The encrypted text is generated using f(x, y).
 
-![eqn2](images/secondeqn.gif)
+![eqn2](/post_images/secondeqn.gif)
 
 Now you have to generate an extra string called the trapdoor in the form of "x^PVT"
 
-![eqn3](images/thirdeqn.gif)
+![eqn3](/post_images/thirdeqn.gif)
 and
-![eqn4](images/fourtheqn.gif)
+![eqn4](/post_images/fourtheqn.gif)
 
 Now by the property of a bilinear map, the PVT multiplication and division cancels out giving
 
-![eqn5](images/fiftheqn.gif)
+![eqn5](/post_images/fiftheqn.gif)
 
 So you have two ways of producing the same encrypted text !!
 
-![eqn6](images/sixtheqn.gif)
+![eqn6](/post_images/sixtheqn.gif)
 
 If you give this string "Vgzv" along with the modified public key (y^PVT) to the third-party, they can verify the equality
 
