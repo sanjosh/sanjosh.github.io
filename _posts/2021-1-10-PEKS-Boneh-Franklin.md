@@ -49,6 +49,9 @@ A third-party which has the string "*Vgzv*" along with the mangled public key ca
 
 This is intuitively the first cryptographic construction given by Boneh, et al in Sec 3.1 of their paper[1] 
 
+![pic4](/post_images/peks_paper.png)
+
+
 I have played fast and loose here to provide intuition.  Refer to original paper for rigorous explanation.
 
 The trapdoor construction is more complex and cryptographically secure, in order to prevent the third-party from guessing the original text.
