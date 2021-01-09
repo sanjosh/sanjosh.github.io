@@ -21,7 +21,7 @@ This problem is solved using a bilinear map, which enables two different ways of
 
 A bilinear map is a function of two variables f(x, y) satifying this condition
 
-![eqn1](images/firsteqn.jpg)
+![eqn1](images/firsteqn.gif)
 
 Lets say you have
 1. public key = PUB
@@ -31,21 +31,21 @@ Let x be the text to be encrypted
 
 The encrypted text is generated using f(x, y).
 
-![eqn2](images/secondeqn.jpg)
+![eqn2](images/secondeqn.gif)
 
 Now you have to generate an extra string called the trapdoor in the form of "x^PVT"
 
-![eqn3](images/thirdeqn.jpg)
+![eqn3](images/thirdeqn.gif)
 and
-![eqn4](images/fourtheqn.jpg)
+![eqn4](images/fourtheqn.gif)
 
 Now by the property of a bilinear map, the PVT multiplication and division cancels out giving
 
-![eqn5](images/fiftheqn.jpg)
+![eqn5](images/fiftheqn.gif)
 
 So you have two ways of producing the same encrypted text !!
 
-![eqn6](images/sixtheqn.jpg)
+![eqn6](images/sixtheqn.gif)
 
 If you give this string "Vgzv" along with the modified public key (y^PVT) to the third-party, they can verify the equality
 
