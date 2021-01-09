@@ -11,7 +11,7 @@ Assume you have a public key encryption system.
 
 Let’s say you wanted to allow a third-party to test whether an encrypted text matches a search string, without 
 1. decrypting the encrypted text or 
-2. knowing or encrypting the search string
+2. encrypting the search string
 
 Let’s say encryption("*Nice*") produces "*8Ev7*"
 
@@ -19,7 +19,7 @@ How can a third-party verify that "*8Ev7*" is actually "*Nice*" in encrypted for
 
 What you need here is an auxiliary string called a **trapdoor** which the third-party can use to verify the equality.  
 
-A trapdoor can be produced using a <a href="https://en.wikipedia.org/wiki/Bilinear_map">bilinear map</a> which enables two different ways of producing same encrypted text.
+The trapdoor can be produced using a <a href="https://en.wikipedia.org/wiki/Bilinear_map">bilinear map</a> which enables two different ways of producing same encrypted text.
 
 A bilinear map is a function of two variables *f(x, y)* satifying this condition
 
