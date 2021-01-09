@@ -11,9 +11,9 @@ Let’s say you wanted a third-party to verify whether an encrypted text matches
 1. decrypting the encrypted text or 
 2. encrypting the search string
 
-Let’s say encryption("Nice") = $Ev7
+Let’s say encryption("Nice") = 8Ev7
 
-How can a third-party verify that "$Ev7" is actually "Nice" in encrypted form ?
+How can a third-party verify that "8Ev7" is actually "Nice" in encrypted form ?
 
 What you need here is an auxiliary string called a "trapdoor" which the third-party can use to verify the equality
 
@@ -31,21 +31,21 @@ Let x be the text to be encrypted
 
 The encrypted text is generated using f(x, y).
 
-<img src="https://render.githubusercontent.com/render/math?math=f(Nice, y) = $Ev7 ">
+<img src="https://render.githubusercontent.com/render/math?math=f(Nice, y) = 8Ev7 ">
 
 Now you have to generate an extra string called the trapdoor in the form of "x^PVT"
 
-<img src="https://render.githubusercontent.com/render/math?math=Nice^{PVT} = $Ev7 ">
+<img src="https://render.githubusercontent.com/render/math?math=Nice^{PVT} = 8Ev7 ">
 and
 <img src="https://render.githubusercontent.com/render/math?math=y^{1/PVT} = z ">
 
 Now by the property of a bilinear map, the PVT multiplication and division cancels out giving
 
-<img src="https://render.githubusercontent.com/render/math?math=f(x^{PVT}, y^{PVT}) = f(x, y) = $Ev7 ">
+<img src="https://render.githubusercontent.com/render/math?math=f(x^{PVT}, y^{PVT}) = f(x, y) = 8Ev7 ">
 
 So you have two ways of producing the same encrypted text !!
 
-<img src="https://render.githubusercontent.com/render/math?math=f(Vgzv, z) = f(Nice, x) = $Ev7 ">
+<img src="https://render.githubusercontent.com/render/math?math=f(Vgzv, z) = f(Nice, x) = 8Ev7 ">
 
 If you give this string "Vgzv" along with the modified public key (y^PVT) to the third-party, they can verify the equality
 
