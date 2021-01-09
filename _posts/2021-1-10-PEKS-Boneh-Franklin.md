@@ -21,43 +21,37 @@ This problem is solved using a bilinear map, which enables two different ways of
 
 A bilinear map is a function of two variables f(x, y) satifying this condition
 
-```
-f(x^a, y^b) = f(x, y)^ab
-```
-
 <img src="https://render.githubusercontent.com/render/math?math=f(x^{a}, y^{y}) = f(x, y)^{ab} ">
 
 Lets say you have
 1. public key = y
 2. private key = PVT
 
-Let x be the text
+Let x be the text to be encrypted
 
 The encrypted text is generated using f(x, y).
 
- so f("Nice", y]) = $Ev7
+<img src="https://render.githubusercontent.com/render/math?math=f("Nice", y) = $Ev7 ">
 
-Now you have to generate an extra string called the trapdoor "PVT.x"
+Now you have to generate an extra string called the trapdoor in the form of "x^PVT"
 
-   PVT * "Nice" = "Vgzv"  (multiply by PVT)
-
-   y/PVT = z (divide by PVT)
+<img src="https://render.githubusercontent.com/render/math?math="Nice"^{PVT} = $Ev7 ">
+and
+<img src="https://render.githubusercontent.com/render/math?math=y^{1/PVT} = z ">
 
 Now by the property of a bilinear map, the PVT multiplication and division cancels out giving
 
-f(PVT.x, y/PVT) = f(x, y)
+<img src="https://render.githubusercontent.com/render/math?math=f(x^{PVT}, y^{1/PVT}) = f(x, y) = $Ev7 ">
 
-So you have two ways of producing the same encrypted text
+So you have two ways of producing the same encrypted text !!
 
-   f("Vgzv", z) = f("Nice", x)
+<img src="https://render.githubusercontent.com/render/math?math=f("Vgzv", z) = f("Nice", x) = "$Ev7" ">
 
-Give this string "Vgzv" along with the public key modification (y/PVT) to the third-party
+If you give this string "Vgzv" along with the modified public key (y^PVT) to the third-party, they can verify the equality
 
-   f("Vgzv", z) = f("Nice", x) = "$Ev7"
-
-This is essentially the first cryptographic construction produced by Boneh and Franklin in their paper
+This is intuitively the first cryptographic construction produced by Boneh and Franklin in their paper
 
 Alright, I have played fast and loose here to provide intuition, lets define it with more rigour
 
-![resources](https://docs.google.com/presentation/d/e/2PACX-1vTx1a9NTz2ilHR2jFEJzZiPMbe3OrChqxyeOcajtey4Lt654_tTPjDIGeNKFUxLPz1jE_hrAIjTQPKg/pub?start=true&loop=true&delayms=1000)
+The trapdoor construction is more complex and cryptographically secure, to prevent the third-party from guessing the original text.
 
