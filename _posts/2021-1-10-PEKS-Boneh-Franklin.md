@@ -17,7 +17,11 @@ How can a third-party verify that "8Ev7" is actually "Nice" in encrypted form ?
 
 What you need here is an auxiliary string called a "trapdoor" which the third-party can use to verify the equality
 
+![eqn1](_posts/firsteqn.gif)
+
 This problem is solved using a bilinear map, which enables two different ways of producing same encrypted text
+
+![eqn1](firsteqn.gif)
 
 A bilinear map is a function of two variables f(x, y) satifying this condition
 
