@@ -31,21 +31,21 @@ Let x be the text to be encrypted
 
 The encrypted text is generated using f(x, y).
 
-<img src="https://render.githubusercontent.com/render/math?math=f("Nice", y) = $Ev7 ">
+<img src="https://render.githubusercontent.com/render/math?math=f(Nice, y) = $Ev7 ">
 
 Now you have to generate an extra string called the trapdoor in the form of "x^PVT"
 
-<img src="https://render.githubusercontent.com/render/math?math="Nice"^{PVT} = $Ev7 ">
+<img src="https://render.githubusercontent.com/render/math?math=Nice^{PVT} = $Ev7 ">
 and
 <img src="https://render.githubusercontent.com/render/math?math=y^{1/PVT} = z ">
 
 Now by the property of a bilinear map, the PVT multiplication and division cancels out giving
 
-<img src="https://render.githubusercontent.com/render/math?math=f(x^{PVT}, y^{1/PVT}) = f(x, y) = $Ev7 ">
+<img src="https://render.githubusercontent.com/render/math?math=f(x^{PVT}, y^{PVT}) = f(x, y) = $Ev7 ">
 
 So you have two ways of producing the same encrypted text !!
 
-<img src="https://render.githubusercontent.com/render/math?math=f("Vgzv", z) = f("Nice", x) = "$Ev7" ">
+<img src="https://render.githubusercontent.com/render/math?math=f(Vgzv, z) = f(Nice, x) = $Ev7 ">
 
 If you give this string "Vgzv" along with the modified public key (y^PVT) to the third-party, they can verify the equality
 
