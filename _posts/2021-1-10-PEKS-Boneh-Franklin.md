@@ -21,7 +21,7 @@ What you need here is an auxiliary string called a "trapdoor" which the third-pa
 
 This problem is solved using a bilinear map, which enables two different ways of producing same encrypted text
 
-![eqn1](/_posts/firsteqn.gif)
+![eqn1](/images/step1.gif)
 
 A bilinear map is a function of two variables f(x, y) satifying this condition
 
